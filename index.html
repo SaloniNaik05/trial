@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>महालक्ष्मी शेती सेवा केंद्र</title>
+
+    <!-- Excel Library -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌿महालक्ष्मी शेती सेवा केंद्र</h1>
+
+    <button id="createExcel">Create Excel Sheet</button>
+
+    <div id="formSection" class="hidden">
+
+        <!-- Product -->
+        <input list="productList" id="product" placeholder="Select / Type Product">
+        <datalist id="productList">
+            <option value="Root X">
+            <option value="Sequel">
+            <option value="Censor">
+            <option value="Weedof">
+            <option value="Urmi">
+            <option value="Oxiquat">
+            <option value="Plus GA">
+            <option value="Menko 71">
+            <option value="MBZ">
+            <option value="NGrow">
+            <option value="Cantech">
+            <option value="Agrizim">
+            <option value="Ami-x">
+            <option value="Intra">
+            <option value="Supic">
+            <option value="Multizyme">
+            <option value="Ultimate Super">
+            <option value="Microstar FS">
+            <option value="Nourish">
+            <option value="Vardan">
+            <option value="Growpure">
+            <option value="7Star">
+            <option value="Evicent">
+            <option value="Halla">
+            <option value="Saff">
+            <option value="Admire">
+            <option value="AN48">
+            <option value="Irma">
+            <option value="ODORI">
+            <option value="Shaktiman">
+            <option value="Manik">
+            <option value="Puran 20">
+            <option value="Super Humic">
+            <option value="Jandar">
+            <option value="10:20:20">
+            <option value="MgSO4 25kg">
+            <option value="Bucket">
+            <option value="Dhruvi Gold">
+            <option value="Safanya">
+            <option value="Boric Acid">
+            <option value="Cytox">
+            <option value="GA">
+            <option value="6BA">
+            <option value="IBA">
+            <option value="Celphos">
+            <option value="Heera 77">
+            <option value="Procane">
+            <option value="Zimmerman">
+            <option value="Rider">
+        </datalist>
+
+        <!-- Quantity -->
+        <input type="number" id="quantityValue" placeholder="Enter Quantity (e.g. 500, 1, 2)" />
+        <select id="quantityUnit">
+            <option value="">Select Unit</option>
+            <option>g</option>
+            <option>kg</option>
+            <option>lt</option>
+            <option>pcs</option>
+        </select>
+
+        <!-- Rate -->
+        <input type="number" id="rate" placeholder="Rate (₹)" />
+
+        <!-- Payment -->
+        <select id="payment">
+            <option value="">Payment Mode</option>
+            <option>Cash</option>
+            <option>Online</option>
+        </select>
+
+        <button id="enter">Enter</button>
+        <button id="submitExcel">Submit Excel Sheet</button>
+    </div>
+
+    <div id="downloadSection" class="hidden">
+        <button id="downloadExcel">Download Excel</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
